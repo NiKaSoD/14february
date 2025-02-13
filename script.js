@@ -136,24 +136,24 @@ document.addEventListener("DOMContentLoaded", function() {
   initHeartAnimation();
 
   const photos = [
-    { photo: "src/photo/1.jpg", title: "Её улыбка озаряет каждый мой день." },
-    { photo: "src/photo/2.jpg", title: "Моя девушка очень красивая и заботливая." },
-    { photo: "src/photo/3.jpg", title: "Её смех – моя любимая музыка." },
-    { photo: "src/photo/4.jpg", title: "Моей девушке нравится моя прическа." },
-    { photo: "src/photo/5.jpg", title: "Она всегда поддерживает меня во всём." },
-    { photo: "src/photo/6.jpg", title: "С ней каждый момент особенный." },
-    { photo: "src/photo/7.jpg", title: "Она – моя радость и опора." },
-    { photo: "src/photo/9.jpg", title: "Её взгляд наполняет жизнь смыслом." },
-    { photo: "src/photo/8.jpg", title: "Любовь к ней бесконечна." },
-    { photo: "src/photo/10.jpg", title: "С ней мечты становятся явью." },
-    { photo: "src/photo/11.jpg", title: "Каждый день с ней – праздник." },
-    { photo: "src/photo/12.jpg", title: "Она — источник моего счастья." },
-    { photo: "src/photo/13.jpg", title: "Она – моя вдохновительница." },
-    { photo: "src/photo/14.jpg", title: "Её красота незабываема." },
-    { photo: "src/photo/15.jpg", title: "Её забота трогает до глубины души." },
-    { photo: "src/photo/16.jpg", title: "С ней мир становится ярче." },
-    { photo: "src/photo/17.jpg", title: "Она всегда рядом, когда нужна поддержка." },
-    { photo: "src/photo/18.jpg", title: "Её улыбка — моя радость." }
+    { photo: "14february/src/photo/1.jpg", title: "Её улыбка озаряет каждый мой день." },
+    { photo: "14february/src/photo/2.jpg", title: "Моя девушка очень красивая и заботливая." },
+    { photo: "14february/src/photo/3.jpg", title: "Её смех – моя любимая музыка." },
+    { photo: "14february/src/photo/4.jpg", title: "Моей девушке нравится моя прическа." },
+    { photo: "14february/src/photo/5.jpg", title: "Она всегда поддерживает меня во всём." },
+    { photo: "14february/src/photo/6.jpg", title: "С ней каждый момент особенный." },
+    { photo: "14february/src/photo/7.jpg", title: "Она – моя радость и опора." },
+    { photo: "14february/src/photo/9.jpg", title: "Её взгляд наполняет жизнь смыслом." },
+    { photo: "14february/src/photo/8.jpg", title: "Любовь к ней бесконечна." },
+    { photo: "14february/src/photo/10.jpg", title: "С ней мечты становятся явью." },
+    { photo: "14february/src/photo/11.jpg", title: "Каждый день с ней – праздник." },
+    { photo: "14february/src/photo/12.jpg", title: "Она — источник моего счастья." },
+    { photo: "14february/src/photo/13.jpg", title: "Она – моя вдохновительница." },
+    { photo: "14february/src/photo/14.jpg", title: "Её красота незабываема." },
+    { photo: "14february/src/photo/15.jpg", title: "Её забота трогает до глубины души." },
+    { photo: "14february/src/photo/16.jpg", title: "С ней мир становится ярче." },
+    { photo: "14february/src/photo/17.jpg", title: "Она всегда рядом, когда нужна поддержка." },
+    { photo: "14february/src/photo/18.jpg", title: "Её улыбка — моя радость." }
   ];
 
   let currentSlide = 0;
@@ -232,12 +232,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Фоновая музыка - плейлист
   const musicPlaylist = [
-    'src/music/0.mp3',
-    'src/music/1.mp3',
-    'src/music/2.mp3',
-    'src/music/3.mp3',
-    'src/music/4.mp3',
-    'src/music/5.mp3'
+    '14february/src/music/0.mp3',
+    '14february/src/music/1.mp3',
+    '14february/src/music/2.mp3',
+    '14february/src/music/3.mp3',
+    '14february/src/music/4.mp3',
+    '14february/src/music/5.mp3'
   ];
   let currentSong = 0;
   const bgMusic = document.getElementById('backgroundMusic');
