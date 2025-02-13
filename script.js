@@ -250,9 +250,10 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // Видео функциональность
+  // Видео функциональность
   const viewVideoBtn = document.getElementById("viewVideoBtn");
   const videoContainer = document.getElementById("videoContainer");
-  const videoPlayer = document.getElementById("videoPlayer");
+  const youtubePlayer = document.getElementById("videoPlayer");
   const backVideoBtn = document.getElementById("backVideoBtn");
 
   viewVideoBtn.addEventListener("click", () => {
@@ -262,11 +263,13 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("heart").style.display = "none";
     document.getElementById("controls").style.display = "none";
     videoContainer.style.display = "block";
-    videoPlayer.play();
+    // Если нужен автозапуск, можно добавить параметр autoplay в src:
+    например: youtubePlayer.src = "https://www.youtube.com/embed/vjWoFwnUCeo?enablejsapi=1"
   });
 
   backVideoBtn.addEventListener("click", () => {
-    videoPlayer.pause();
+    // Чтобы остановить видео, перезагружаем iframe (это сбросит воспроизведение)
+    youtubePlayer.src = youtubePlayer.src;
     bgMusic.play().catch(e => console.log("Ошибка воспроизведения:", e));
     videoContainer.style.display = "none";
     document.getElementById("inscription").style.display = "block";

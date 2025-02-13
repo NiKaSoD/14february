@@ -35,14 +35,29 @@
   </div>
 
   <!-- Секция видео (скрыта по умолчанию) -->
-  <div id="videoContainer">
+  <!-- <div id="videoContainer">
     <video id="videoPlayer" width="80%" controls>
       <source src="src/video.mp4" type="video/mp4">
       Ваш браузер не поддерживает видео.
     </video>
     <br>
     <button id="backVideoBtn">Вернуться</button>
+  </div> -->
+
+  <!-- Секция видео (скрыта по умолчанию) -->
+  <div id="videoContainer" style="display: none;">
+    <!-- Встраиваем YouTube-видео через iframe -->
+    <iframe id="videoPlayer" width="100%"
+      src="https://www.youtube.com/embed/vjWoFwnUCeo?enablejsapi=1"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <br>
+    <button id="backVideoBtn">Вернуться</button>
   </div>
+  
+
 
   <!-- Милая надпись -->
   <div id="inscription">

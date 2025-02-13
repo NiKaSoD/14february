@@ -87,13 +87,15 @@
     z-index: 3;
     text-align: center;
     display: none;
+/* 
+    height: 90vh; */
   }
   
   #videoPlayer {
     max-width: 80vw;
     max-height: 80vh;
-    min-width: 80vw;
-    max-height: 80vh;
+    min-width: 70vw;
+    min-height: 70vh;
     object-fit: contain;
 
   }
