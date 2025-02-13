@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>I LOVE YOU</title>
+  <link rel="icon" type="image/x-icon" href="/src/heart_icon-icons.com_54429.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Анимация сердца -->
+  <canvas id="heart"></canvas>
+
+  <!-- Фоновая музыка (скрытая) -->
+  <!-- Удалён autoplay, т.к. автозапуск может блокироваться -->
+  <audio id="backgroundMusic" loop style="display:none;">
+    <source src="/src/music/1.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудио.
+  </audio>
+
+  <!-- Кнопки управления поверх анимации -->
+  <div id="controls">
+    <button id="viewPhotosBtn">*ТЫК СЮДА*</button>
+    <button id="viewVideoBtn">Посмотреть видео</button>
+    <!-- Новая кнопка для запуска музыки -->
+    <button id="startMusicBtn">Запустить музыку</button>
+    <!-- Ползунок для регулировки громкости -->
+    <input type="range" id="volumeControl" min="0.05" max="1" step="0.01" value="0.1" style="display: none;">
+  </div>
+
+  <!-- Секция слайдера (скрыта по умолчанию) -->
+  <div id="intro">
+    <img id="introImg" src="" alt="Фото">
+    <div id="caption"></div>
+    <button id="backBtn">Вернуться</button>
+  </div>
+
+  <!-- Секция видео (скрыта по умолчанию) -->
+  <div id="videoContainer">
+    <video id="videoPlayer" width="80%" controls>
+      <source src="/src/Новый год с любимкой.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+    <br>
+    <button id="backVideoBtn">Вернуться</button>
+  </div>
+
+  <!-- Милая надпись -->
+  <div id="inscription">
+    Я тебя очень-очень люблю и хочу всегда оставаться твоим Алинохорсером
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
