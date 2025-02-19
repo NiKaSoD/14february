@@ -134,26 +134,11 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   initHeartAnimation();
-
+//change path to photos and title for them. you can add as many pictures and captions as you want. but keep the object's structure
   const photos = [
-    { photo: "src/photo/1.jpg", title: "Её улыбка озаряет каждый мой день." },
-    { photo: "src/photo/2.jpg", title: "Моя девушка очень красивая и заботливая." },
-    { photo: "src/photo/3.jpg", title: "Её смех – моя любимая музыка." },
-    { photo: "src/photo/4.jpg", title: "Моей девушке нравится моя прическа." },
-    { photo: "src/photo/5.jpg", title: "Она всегда поддерживает меня во всём." },
-    { photo: "src/photo/6.jpg", title: "С ней каждый момент особенный." },
-    { photo: "src/photo/7.jpg", title: "Она – моя радость и опора." },
-    { photo: "src/photo/9.jpg", title: "Её взгляд наполняет жизнь смыслом." },
-    { photo: "src/photo/8.jpg", title: "Любовь к ней бесконечна." },
-    { photo: "src/photo/10.jpg", title: "С ней мечты становятся явью." },
-    { photo: "src/photo/11.jpg", title: "Каждый день с ней – праздник." },
-    { photo: "src/photo/12.jpg", title: "Она — источник моего счастья." },
-    { photo: "src/photo/13.jpg", title: "Она – моя вдохновительница." },
-    { photo: "src/photo/14.jpg", title: "Её красота незабываема." },
-    { photo: "src/photo/15.jpg", title: "Её забота трогает до глубины души." },
-    { photo: "src/photo/16.jpg", title: "С ней мир становится ярче." },
-    { photo: "src/photo/17.jpg", title: "Она всегда рядом, когда нужна поддержка." },
-    { photo: "src/photo/18.jpg", title: "Её улыбка — моя радость." }
+    { photo: "src/photo/1.jpg", title: "cute title for first photo" },
+    { photo: "src/photo/2.jpg", title: "something else" },
+    { photo: "src/photo/3.jpg", title: "new words" }
   ];
 
   let currentSlide = 0;
@@ -230,14 +215,10 @@ document.addEventListener("DOMContentLoaded", function() {
     initHeartAnimation();
   });
 
-  // Фоновая музыка - плейлист
+  // music for playing on background. you can add many tracks to an array
+  //change path to your track
   const musicPlaylist = [
-    'src/music/0.mp3',
-    'src/music/1.mp3',
-    'src/music/2.mp3',
-    'src/music/3.mp3',
-    'src/music/4.mp3',
-    'src/music/5.mp3'
+    'src/music/her favorite songs.mp3'
   ];
   let currentSong = 0;
   const bgMusic = document.getElementById('backgroundMusic');
@@ -249,8 +230,6 @@ document.addEventListener("DOMContentLoaded", function() {
     bgMusic.play();
   });
 
-  // Видео функциональность
-  // Видео функциональность
   const viewVideoBtn = document.getElementById("viewVideoBtn");
   const videoContainer = document.getElementById("videoContainer");
   const youtubePlayer = document.getElementById("videoPlayer");
@@ -263,14 +242,13 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("heart").style.display = "none";
     document.getElementById("controls").style.display = "none";
     videoContainer.style.display = "block";
-    // Если нужен автозапуск, можно добавить параметр autoplay в src:
-    например: youtubePlayer.src = "https://www.youtube.com/embed/vjWoFwnUCeo?enablejsapi=1"
+    // change URL to URL your video on YouTube:
+    youtubePlayer.src = "https://www.youtube.com/embed/dQw4w9WgXcQ"
   });
 
   backVideoBtn.addEventListener("click", () => {
-    // Чтобы остановить видео, перезагружаем iframe (это сбросит воспроизведение)
     youtubePlayer.src = youtubePlayer.src;
-    bgMusic.play().catch(e => console.log("Ошибка воспроизведения:", e));
+    bgMusic.play().catch(e => console.log("Error:", e));
     videoContainer.style.display = "none";
     document.getElementById("inscription").style.display = "block";
     document.getElementById("heart").style.display = "block";
@@ -279,19 +257,16 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-  // Элементы для управления музыкой
   const startMusicBtn = document.getElementById("startMusicBtn");
   const volumeControl = document.getElementById("volumeControl");
 
-  // Запуск музыки по клику на кнопку
   startMusicBtn.addEventListener("click", () => {
-    bgMusic.play().catch(e => console.log("Ошибка воспроизведения:", e));
+    bgMusic.play().catch(e => console.log("Error:", e));
     startMusicBtn.style.display = "none";
     volumeControl.style.display = ""
     bgMusic.volume = volumeControl.value;
   });
 
-  // Регулировка громкости при изменении ползунка
   volumeControl.addEventListener("input", () => {
     bgMusic.volume = volumeControl.value;
   });

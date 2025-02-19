@@ -7,61 +7,41 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Анимация сердца -->
   <canvas id="heart"></canvas>
 
-  <!-- Фоновая музыка (скрытая) -->
-  <!-- Удалён autoplay, т.к. автозапуск может блокироваться -->
   <audio id="backgroundMusic" loop style="display:none;">
     <source src="src/music/1.mp3" type="audio/mpeg">
-    Ваш браузер не поддерживает аудио.
   </audio>
 
-  <!-- Кнопки управления поверх анимации -->
   <div id="controls">
-    <button id="viewPhotosBtn">*ТЫК СЮДА*</button>
-    <button id="viewVideoBtn">Посмотреть видео</button>
-    <!-- Новая кнопка для запуска музыки -->
-    <button id="startMusicBtn">Запустить музыку</button>
-    <!-- Ползунок для регулировки громкости -->
+    <button id="viewPhotosBtn">*CLICK HERE*</button>
+    <button id="viewVideoBtn">Check video</button>
+    <button id="startMusicBtn">Start music</button>
     <input type="range" id="volumeControl" min="0.05" max="1" step="0.01" value="0.1" style="display: none;">
   </div>
 
-  <!-- Секция слайдера (скрыта по умолчанию) -->
   <div id="intro">
     <img id="introImg" src="" alt="Фото">
     <div id="caption"></div>
     <button id="backBtn">Вернуться</button>
   </div>
 
-  <!-- Секция видео (скрыта по умолчанию) -->
-  <!-- <div id="videoContainer">
-    <video id="videoPlayer" width="80%" controls>
-      <source src="src/video.mp4" type="video/mp4">
-      Ваш браузер не поддерживает видео.
-    </video>
-    <br>
-    <button id="backVideoBtn">Вернуться</button>
-  </div> -->
-
-  <!-- Секция видео (скрыта по умолчанию) -->
   <div id="videoContainer" style="display: none;">
-    <!-- Встраиваем YouTube-видео через iframe -->
+    <!-- change URL to URL your video -->
     <iframe id="videoPlayer" width="100%"
-      src="https://www.youtube.com/embed/vjWoFwnUCeo?enablejsapi=1"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
       frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
     </iframe>
     <br>
-    <button id="backVideoBtn">Вернуться</button>
+    <button id="backVideoBtn">Back</button>
   </div>
   
 
-
-  <!-- Милая надпись -->
   <div id="inscription">
-    Я тебя очень-очень люблю и хочу всегда оставаться твоим Алинохорсером
+  <!--change -->
+    *Some cute speech, fits the promise of being together*
   </div>
 
   <script src="script.js"></script>
